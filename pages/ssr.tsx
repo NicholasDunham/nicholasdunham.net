@@ -1,4 +1,5 @@
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";
+import Link from "next/link";
 
 export default function SSR({
   formattedDate,
@@ -10,7 +11,7 @@ export default function SSR({
         This page is server-side rendered. It was rendered on {formattedDate}
       </p>
       <p>
-        <a href="/">View a static page.</a>
+        <Link href="/">View a static page.</Link>
       </p>
     </>
   );
